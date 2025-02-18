@@ -1,0 +1,145 @@
+/* Resetando o estilo de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Estilo do menu de navegação com botões */
+nav {
+    background-color: #042a5b79;
+    padding: -50%;
+    align-items: right;
+    text-align: left;
+    background-image: url(./img/1.jpg);
+}
+
+.nav-container {
+    display:grid;
+    justify-content: left;
+    gap: 0px;
+}
+
+
+.nav-btn {
+    background-color: #2b8ecb;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Estilo das seções */
+.section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilo das imagens interativas */
+.interactive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.interactive-image:hover {
+    transform: scale(1.05);
+}
+
+/* Botões dentro das seções */
+.btn {
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffeb3b;
+}
+
+/* Estilo do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffeb3b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav .nav-container {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .interactive-image {
+        width: 100%;
+    }
+}

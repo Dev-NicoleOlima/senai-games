@@ -1,0 +1,434 @@
+/* Corpo da página */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Transição suave para fundo */
+}
+
+
+/* Decoração ao lado do texto na História Barroca */
+.secao.historia {
+    padding: 40px;
+    background-color: #1a1616;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.decoracao-lateral {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 10px;
+    height: 100%;
+    background-color: #b79c5d; /* Cor dourada para contraste */
+    border-radius: 5px;
+}
+
+/* Estilo para a galeria de obras barrocas */
+.obras-barrocas .image-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.obras-barrocas .obra-barroca {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.obras-barrocas .obra-barroca:hover {
+    transform: scale(1.05);
+}
+
+/* Esconder imagens inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Estilo do botão */
+.btn-interativo {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    background-color: #b79c5d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover no botão */
+.btn-interativo:hover {
+    background-color: #e9cba7;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Formatação do footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Centralizando os botões */
+.container-botao {
+    display: flex;
+    justify-content: center; /* Alinha os botões no centro horizontal */
+    align-items: center; /* Alinha os botões no centro vertical */
+    height: 100vh; /* Garante que o contêiner ocupe toda a altura da tela */
+    background: linear-gradient(135deg, #f4c2c2, #f9d3c1); /* Gradiente suave de fundo */
+    padding: 20px;
+}
+
+.btn-interativo, form button {
+    width: 300px;
+    display: block; /* Garante que os botões ocupem o espaço disponível */
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    background-color: #b79c5d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease; /* Transições mais suaves */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+
+/* Hover e efeitos no botão */
+.btn-interativo:hover, form button:hover {
+    background-color: #e9cba7;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+    transform: translateY(-5px) scale(1.05); /* Levanta o botão e aumenta ligeiramente */
+    border-radius: 60px; /* Efeito de borda arredondada mais suave */
+    transition: border-radius 0.5s ease, transform 0.3s ease; /* Transição para borda arredondada e zoom */
+}
+
+/* Efeito de clique no botão */
+.btn-interativo:active, form button:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #cabeb7;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra no título */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3d2a1d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave no cabeçalho */
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px 15px;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease; /* Transição de cor suave */
+}
+
+nav ul li a:hover {
+    color: #e9cba7; /* Cor suave ao passar o mouse */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #b79c5d;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    font-size: 14px;
+    font-style: italic; /* Estilo em itálico no texto do footer */
+}
+
+/* Formulário */
+form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave no formulário */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border 0.3s ease; /* Transição suave para borda */
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid #b79c5d; /* Cor da borda ao focar nos campos */
+}
+
+/* Efeitos de hover nas imagens */
+.image-container {
+    display: flex;
+    gap: 2px; /* Espaço maior entre as imagens */
+    justify-content: center;
+    margin-top: 4px;
+    margin-left: 1px;
+    margin-right: 1px;
+    
+}
+
+.side-image {
+    max-width: 51%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Transição suave no hover */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+}
+
+.side-image:hover {
+    transform: scale(1.05); /* Efeito de zoom nas imagens */
+}
+
+/* Galeria */
+
+.galeria .imagem-item {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra nas imagens da galeria */
+}
+
+.galeria .imagem-item:hover {
+    transform: scale(1.05);
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.descricao {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Alinhamento e estilo para o texto na seção de história */
+.secao.historia {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.texto-alinhado {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.lista-caracteristicas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-caracteristicas li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Artistas */
+.artistas .artistas-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artistas .artista {
+    width: 30%;
+    text-align: center;
+}
+
+.artistas .artista img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Seção */
+.secao {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.secao h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #3d2a1d;
+    text-transform: uppercase; /* Título em maiúsculas */
+}
+
+.secao p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #b49e9e;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Home */
+.home {
+    background-color: #fff3e6;
+    padding: 100px 0;
+}
+
+.home .intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #8c8cd1;
+}
+
+/* Efeito no fundo */
+body {
+    background: linear-gradient(135deg, #f4c2c2, #f9d3c1);
+}
+.texto-justificado {
+    text-align: justify;
+}
+
+/* Estilos do botão */
+.botao {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #45a049;
+}
+
+.botao:active {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Confetes */
+.confetes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    display: none;
+}
+
+.confetes .confete {
+    position: absolute;
+    background-color: #ff0;
+    border-radius: 50%;
+    animation: cair 1.5s ease-in forwards;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}

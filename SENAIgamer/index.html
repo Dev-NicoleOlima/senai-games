@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senai Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu de Navegação com Botões -->
+    <nav>
+        <div class="nav-container">
+            <button onclick="location.href='#principal'" class="nav-btn">Principal</button>
+            <button onclick="location.href='#chaveamento'" class="nav-btn">Chaveamento</button>
+            <button onclick="location.href='#regulamento'" class="nav-btn">Regulamento</button>
+            <button onclick="location.href='#participe'" class="nav-btn">Participe</button>
+            <button onclick="location.href='#contato'" class="nav-btn">Contato</button>
+        </div>
+    </nav>
+
+
+    <!-- Seção Principal -->
+    <section id="principal" class="section">
+        <div class="container">
+            <h1>Bem-vindo ao Senai Games 2025!</h1>
+            <p>Participe do maior evento de competição e inovação do ano!</p>
+            <img src="evento.jpg" alt="Imagem do Evento" class="interactive-image">
+            <a href="#chaveamento" class="btn">Veja o Chaveamento</a>
+            <a href="#regulamento" class="btn">Confira o Regulamento</a>
+        </div>
+    </section>
+
+    <!-- Seção Chaveamento -->
+    <section id="chaveamento" class="section">
+        <div class="container">
+            <h2>Chaveamento dos Jogos</h2>
+            <p>Em breve, você poderá ver todos os jogos e seus horários.</p>
+            <img src="chaveamento.jpg" alt="Imagem do Chaveamento" class="interactive-image">
+            <a href="#regulamento" class="btn">Confira o Regulamento</a>
+            <a href="#participe" class="btn">Participe Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção Regulamento -->
+    <section id="regulamento" class="section">
+        <div class="container">
+            <h2>Regulamento</h2>
+            <p>Veja as regras para participar do Senai Games e garantir sua chance de vitória.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/abcd1234" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a href="#participe" class="btn">Como Participar</a>
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- Seção Participe -->
+    <section id="participe" class="section">
+        <div class="container">
+            <h2>Participe do Senai Games!</h2>
+            <p>Inscreva-se agora e mostre seu talento!</p>
+            <img src="inscricao.jpg" alt="Inscrição" class="interactive-image">
+            <a href="#contato" class="btn">Entre em Contato</a>
+            <a href="#principal" class="btn">Voltar ao Início</a>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Tem alguma dúvida? Entre em contato com nossa equipe.</p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Sua mensagem..." required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <a href="#principal" class="btn">Voltar ao Início</a>
+        </div>
+    </section>
+
+</body>
+</html>
