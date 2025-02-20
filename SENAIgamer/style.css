@@ -1,3 +1,7 @@
+
+
+
+
 /* Resetando o estilo de margens e padding */
 * {
     margin: 0;
@@ -7,17 +11,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background-color: #ebaaff;
     color: #333;
 }
 
 /* Estilo do menu de navegação com botões */
 nav {
-    background-color: #042a5b79;
+    background-color: #7488a279;
     padding: -50%;
     align-items: right;
     text-align: left;
-    background-image: url(./img/1.jpg);
+    background-image: url(capa.jpg);
 }
 
 .nav-container {
@@ -28,7 +32,7 @@ nav {
 
 
 .nav-btn {
-    background-color: #2b8ecb;
+    background-color: #5823b4;
     color: white;
     padding: 12px 20px;
     font-size: 16px;
@@ -39,7 +43,7 @@ nav {
 }
 
 .nav-btn:hover {
-    background-color: #ffeb3b;
+    background-color: #a455ff;
     transform: scale(1.1);
 }
 
@@ -57,7 +61,7 @@ nav {
 }
 
 h1, h2 {
-    color: #004aad;
+    color: #6d1ec3;
     margin-bottom: 20px;
 }
 
@@ -82,7 +86,7 @@ p {
 
 /* Botões dentro das seções */
 .btn {
-    background-color: #004aad;
+    background-color: #762dd6;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -95,7 +99,7 @@ p {
 }
 
 .btn:hover {
-    background-color: #ffeb3b;
+    background-color: #752fb3;
 }
 
 /* Estilo do formulário de contato */
@@ -129,8 +133,7 @@ button:hover {
     background-color: #ffeb3b;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 2000px) {
     nav .nav-container {
         flex-direction: column;
     }
@@ -141,5 +144,60 @@ button:hover {
 
     .interactive-image {
         width: 100%;
+    }
+
+    /* Ajuste do carrossel para telas pequenas */
+    .carrosel {
+        width: 100%;  /* Ajuste o carrossel para ocupar 100% da largura disponível */
+        height: 250px;  /* Defina a altura para que o carrossel tenha um tamanho bom em telas pequenas */
+        outline: 3px solid black;
+        margin: 50px auto;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        position: relative;
+        /* max-width:767px ; */
+    }
+
+    .carrosel ul {
+        display: flex;
+        list-style: none;
+        width: 100%;  /* Ajuste a largura para se adaptar ao tamanho do carrossel */
+        height: 100%;
+    }
+
+    .carrosel li {
+        flex: 0 0 100%;
+        height: 100%;
+        position: relative;
+        animation: slide 15s infinite ease-out;
+    }
+
+    /* Animação do carrossel */
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        20% {
+            transform: translateX(0);
+        }
+        40% {
+            transform: translateX(-100%);
+        }
+        60% {
+            transform: translateX(-200%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    /* Fonte do carrossel */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
     }
 }
