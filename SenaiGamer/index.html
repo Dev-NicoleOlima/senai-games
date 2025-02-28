@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senaigamer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+
+    
+    <nav>
+        <section class="">
+        <div class="wrapper">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="./images/OVER-removebg-preview.png" alt="">
+                </div>
+                
+                <div class="links" style="margin-left: 0;">
+                    <a href="#home">Home</a>
+                    <a href="#games">Jogos</a>
+                    <a href="#brackets">Chaveamento</a>
+                    <a href="#regulation">Regulamento </a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="landingpage ">
+        <div class="content" style="display: flex; justify-content: flex-start;">
+            <div class="heading" style="margin-left: 7%;">
+                <h1>Bem-vindo ao Senaigamer</h1>
+                <p>O maior interclasse gamer! Prepare-se para competir e se divertir!</p>
+                <button>Saiba Mais</button>
+            </div>
+            <div class="img">
+                <img src="/images/home img.png" alt="" width="99%" height="82%">
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="aboutus" section>
+        <div class="container">
+            <div class="aboutus-content">
+                
+                <h1>Jogos</h1>
+                <p>Descubra os jogos disponíveis no Senaigamer, incluindo FPS, MOBA e Battle Royale.</p>
+            </div>
+        </div>
+        <div class="carousel-container">
+           
+            
+            <div class="carousel">
+                
+                <div><img src="/images/game1.webp" alt="Jogo 1"></div>
+                <div><img src="/images/game2.webp" alt="Jogo 2"></div>
+                <div><img src="/images/game3.webp" alt="Jogo 3"></div>
+                <div><img src="/images/game4.webp" alt="Jogo 4"></div>
+                <div><img src="images/game5.jpg" alt="Jogo 5"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="brackets" class="detalhes-chaveamento" style="color: white;">
+        <div class="title">
+            <h1 class="chave">Chaveamento</h1>
+        </div>
+        <div class="chaaveament">
+            
+            <div class="card">
+                <img src="/images/chaveamento.png" alt="Tabela de Chaveamento" width="25% " height="25%">
+                <div class="discription">
+                    <h1 >Veja as Partidas</h1>
+                    <p class="chave">Acompanhe as fases do torneio e veja quem está na liderança!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="regulation" class="regulation">
+        <div class="container">
+            <div class="content">
+                <h1>Regulamento</h1>
+                <p>Aqui você encontrará todas as regras e regulamentos dos jogos do Senaigamer.</p>
+                <p><a href="REGULAMENTO.pdf" target="_blank">Clique aqui para acessar o regulamento completo </a></p> 
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="download section">
+        <div class="borda">
+            <div class="content">
+                <h1>Contato</h1>
+                <p>Entre em contato para dúvidas ou informações sobre o evento.</p>
+                <form action="#" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+    
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2500,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+    </section>
+</body>
+</html>
