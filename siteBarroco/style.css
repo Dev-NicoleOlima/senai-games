@@ -1,0 +1,758 @@
+/* --- Estilos Originais --- */
+
+/* Corpo da página */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+
+    color: #000000;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Transição suave para fundo */
+    background: url(obraF.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.imagem-item{
+    border-radius: 10px;
+    
+
+}
+.imagem-item:hover{
+    transform: scale(1.05);
+
+}
+
+
+/* Decoração ao lado do texto na História Barroca */
+.secao.historia {
+    padding: 40px;
+    background: url(fundo2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+}
+
+.secao.caracteristicas {
+    padding: 40px;
+    background: url(fundo3.webp) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/* Estilo para a galeria de obras barrocas */
+.obras-barrocas .image-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.obras-barrocas .obra-barroca {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.obras-barrocas .obra-barroca:hover {
+    transform: scale(1.05);
+}
+
+/* Esconder imagens inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Estilo do botão */
+.btn-interativo {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    background-color: #b79c5d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover no botão */
+.btn-interativo:hover {
+    background-color: #e9cba7;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Formatação do footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Centralizando os botões */
+.container-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #c4a077, #f9d3c1);
+    padding: 20px;
+}
+
+.btn-interativo, form button {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    background-color: #b79c5d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover e efeitos no botão */
+.btn-interativo:hover, form button:hover {
+    background-color: #e6c194;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px) scale(1.05);
+    border-radius: 60px;
+    transition: border-radius 0.5s ease, transform 0.3s ease;
+}
+
+/* Efeito de clique no botão */
+.btn-interativo:active, form button:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #e4e2e1;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(235, 221, 221, 0.1);
+}
+
+/* Cabeçalho */
+header {
+    background-color: #573a22;
+    color: rgb(46, 36, 14);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+   
+}
+
+nav ul li {
+    display:inline-block !important;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px 15px;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d8b68d;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #b79c5d;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Formulário */
+form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 99%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid #b79c5d;
+}
+
+/* Efeitos de hover nas imagens */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4px;
+    margin-left: 1px;
+    margin-right: 1px;
+    height: 350px;
+} 
+
+.containerImages
+{
+    display: flex;
+align-items: center;
+justify-content: space-around;
+    width: 100%;
+    height: 400px !important;
+    flex-direction: row;
+    margin-top: 4px;
+    margin-left: 1px;
+    margin-right: 1px;
+} 
+
+.imagem-item
+{
+    width: 250px;
+    height: 250px;
+   
+} 
+
+.side-image {
+    max-width: 35%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.side-image:hover {
+    transform: scale(1.05);
+}
+
+.imageResize
+{
+    width: 195px !important;
+    height: 285px;
+} 
+
+/* Galeria */
+.galeria .imagem-item {
+    display: flex;
+    position:relative;
+    /* width: 30%; */
+    overflow:visible;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    display: inline-block;
+  
+}
+
+.galeria .imagem-item:hover {
+    transform: scale(1.05);
+   
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Alinhamento e estilo para o texto na seção de história */
+.secao.historia {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.texto-alinhado {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #ded9d9;
+    margin-bottom: 20px;
+}
+
+.lista-caracteristicas {
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+    color: #d6d1cd;
+}
+
+.lista-caracteristicas li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Artistas */
+.artistas .artistas-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artistas .artista {
+    width: 30%;
+    text-align: center;
+}
+
+.artistas .artista img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Seção */
+.secao {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.secao h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fdfdfd;
+    text-transform: uppercase;
+}
+
+.secao p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f3eded;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Home */
+.home {
+    padding: 100px ;
+}
+
+
+.home .intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+}
+
+/* Texto Justificado */
+.texto-justificado {
+    text-align: center;
+}
+
+
+
+
+/* --- Media Queries para Responsividade --- */
+
+/* Para telas de tablets e dispositivos com largura até 768px */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+
+    
+
+    .image-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .image-container img {
+        
+        margin-bottom: 10px;
+    }
+
+    
+
+    .btn-interativo,
+    form button,
+    .botao {
+        background-color: #795548;
+        width: 80%;
+        font-size: 16px;
+    }
+}
+
+.textHolder4
+{
+    padding: 20px;
+    height: 150px;
+    background-color: #64625eab;
+    border-radius: 10px;
+}
+
+
+.textHolder3
+{
+    padding: 20px;
+    height: 750px;
+    background-color: #64625eab;
+    border-radius: 10px;
+}
+.textHolder2
+{
+    padding: 20px;
+    height: 750px;
+    background-color: #b99d5f9f;
+    border-radius: 10px;
+}
+.imgArtists
+{ 
+    height: 150px; 
+}
+
+.textHolder
+{
+    padding: 10px;
+    height: 500px !important;
+    background-color: #44341f6b;
+    border-radius: 10px;
+}
+
+/* Para telas de celulares com largura até 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .secao {
+        padding: 40px 10px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+ 
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .btn-interativo,
+    form button,
+    .botao {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.jogo {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+h1{
+    color: #f1f1f1;
+}
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+.carta:hover{
+    transform: scale(1.05);
+}
+
+.carta {
+    width: 150px;
+    height: 150px;
+    background-color: #dbd9d8ab;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.carta img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: none;
+}
+
+
+
+.carta.virada img {
+    display: block;
+}
+
+.carta.virada {
+    transform: rotateY(180deg);
+}
+
+.reiniciar {
+    background-color: #866a48;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reiniciar:hover {
+    background-color: #e9cba7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mais-obras{
+    background-color: #000;
+
+}
+/*Carrossel*/
+.carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.jogo{
+    background-color: #000000;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+    opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
